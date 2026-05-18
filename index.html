@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Green MSME Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<header>
+    <h1>🌿 Green MSME Simulator</h1>
+    <p>RBI Policy • Inflation • Sustainability Impact Engine</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Economic Input Panel</h2>
+
+        <label>RBI Interest Rate: <span id="rateVal">6</span>%</label>
+        <input type="range" id="rate" min="1" max="15" value="6">
+
+        <label>Inflation Rate: <span id="inflationVal">5</span>%</label>
+        <input type="range" id="inflation" min="1" max="15" value="5">
+
+        <label>Sustainability Score: <span id="greenVal">6</span>/10</label>
+        <input type="range" id="green" min="0" max="10" value="6">
+
+        <button onclick="runSimulation()">Run Simulation</button>
+
+        <div class="result" id="resultBox"></div>
+    </div>
+
+    <div class="card">
+        <h2>📊 MSME Risk Visualization</h2>
+        <canvas id="riskChart"></canvas>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
